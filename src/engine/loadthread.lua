@@ -413,8 +413,10 @@ resetData()
 
 -- Thread loop
 while true do
-    local msg = in_channel:demand()
-    if msg == "verbose" then
+    local msg = in_channel:pop()
+    if msg == nil then
+
+    elseif msg == "verbose" then
         verbose = true
     elseif msg == "stop" then
         break
