@@ -1,0 +1,2 @@
+@REM THIS STRONGLY DEPENDS ON WHERE YOU INSTALLED LOVE.exe
+"C:\Program Files\LOVE\love.exe" .
