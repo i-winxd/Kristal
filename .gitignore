@@ -7,8 +7,10 @@ mods/*
 !mods/example/
 !mods/previewtest/
 !mods/z/
+!mods/idk____0401
 
 build/
 output/
 
 *.tiled-session
+.mypy_cache/*
