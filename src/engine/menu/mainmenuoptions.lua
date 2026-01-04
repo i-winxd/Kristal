@@ -561,21 +561,22 @@ function MainMenuOptions:initializeOptions()
     -- Graphics Options
     ---------------------
 
-    self:registerConfigOption({ "general", "graphics" }, "Fullscreen", "fullscreen", function (toggled)
-        love.window.setFullscreen(toggled)
-    end)
+    -- self:registerConfigOption(
+    -- { "general", "graphics" }, "Fullscreen", "fullscreen", function (toggled)
+    --     love.window.setFullscreen(toggled)
+    -- end)
 
-    self:registerOption({ "general", "graphics" }, "Window Scale", function ()
-                            return tostring(Kristal.Config["windowScale"]) .. "x"
-                        end, function ()
-                            self:setState("WINDOWSCALE")
-                        end)
+    -- self:registerOption({ "general", "graphics" }, "Window Scale", function ()
+    --                         return tostring(Kristal.Config["windowScale"]) .. "x"
+    --                     end, function ()
+    --                         self:setState("WINDOWSCALE")
+    --                     end)
 
-    self:registerOption({ "general", "graphics" }, "Border", function ()
-                            return Kristal.getBorderName()
-                        end, function ()
-                            self:setState("BORDER")
-                        end)
+    -- self:registerOption({ "general", "graphics" }, "Border", function ()
+    --                         return Kristal.getBorderName()
+    --                     end, function ()
+    --                         self:setState("BORDER")
+    --                     end)
 
     self:registerConfigOption({ "general", "graphics" }, "Simplify VFX", "simplifyVFX")
 
@@ -618,7 +619,7 @@ function MainMenuOptions:initializeOptions()
     self:registerConfigOption("engine", "Verbose Loader", "verboseLoader")
     self:registerConfigOption("engine", "Use System Mouse", "systemCursor", function () Kristal.updateCursor() end)
     self:registerConfigOption("engine", "Always Show Mouse", "alwaysShowCursor", function () Kristal.updateCursor() end)
-    self:registerConfigOption("engine", "Instant Quit", "instantQuit")
+    -- self:registerConfigOption("engine", "Instant Quit", "instantQuit")
 end
 
 return MainMenuOptions
