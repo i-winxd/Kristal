@@ -17,6 +17,16 @@ function MainMenuCredits:init(menu)
     self.menu = menu
 
     self.pages = {
+        {"TESCORUNE",
+            {
+                {"Did the mod", COLORS.silver},
+                "i-win",
+                {"Assets sourced from", COLORS.silver},
+                "Gaster Blaster - Scarm, JustAnotherRandomUser",
+                "Yellow Soul - vitellaryjr",
+                "Big Shot FLP - Nini"
+            }
+        },
         {
             "Kristal Engine",
             {

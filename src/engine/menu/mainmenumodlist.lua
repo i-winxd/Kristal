@@ -405,7 +405,7 @@ function MainMenuModList:buildModListFavorited()
     
     -- Add the mod create button
     local create_button = ModCreateButton(424 + 70, 42)
-    self.list:addMod(create_button)
+    -- self.list:addMod(create_button)
 
     -- Remember the loaded structure of the mods directory
     self.last_loaded = love.filesystem.getDirectoryItems("mods")

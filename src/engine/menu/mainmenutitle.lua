@@ -42,7 +42,7 @@ function MainMenuTitle:onEnter(old_state)
     else
         self.options = {
             {"play",      "Play a mod"},
-            {"modfolder", "Open mods folder"},
+            -- {"modfolder", "Open mods folder"},
             {"options",   "Options"},
             {"credits",   "Credits"},
             {"wiki",      "Open wiki"},
